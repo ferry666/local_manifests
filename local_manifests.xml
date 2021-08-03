@@ -4,20 +4,20 @@
   <remote name="Me"
           fetch="https://github.com/Dreadwyrm" />
 	
-  <remote name="gr"
-          fetch="https://github.com/ghostrider-reborn" />
-	
   <remote name="Clang"
           fetch="https://github.com/ThankYouMario" />
    
   <remote name="ArrowOS"
           fetch="https://github.com/ArrowOS" />
 
+  <remote name="AD"                                                                           
+          fetch="https://github.com/ArrowOS-Devices" />
+
   <!-- Trees -->
-  <project path="device/xiaomi/ginkgo" name="device_xiaomi_ginkgo" remote="Me" revision="A11" />
-  <project path="kernel/xiaomi/ginkgo" name="android_kernel_xiaomi_ginkgo" remote="gr" revision="11.0" />
+  <project path="device/xiaomi/ginkgo" name="device_xiaomi_ginkgo" remote="Me" revision="PBOS" />
+  <project path="kernel/xiaomi/ginkgo" name="android_kernel_xiaomi_ginkgo" remote="AD" revision="arrow-11.0" />
   <project path="vendor/xiaomi/ginkgo" name="vendor_xiaomi_ginkgo" remote="Me" revision="A11" />
-  
+
   <!-- MIUI Camera -->
   <project path="vendor/miuicamera" name="vendor_miuicamera" remote="Me" revision="11" />
 
@@ -30,10 +30,16 @@
   <remove-project name="hardware_qcom-caf_sm8150_media" />
   <remove-project name="android_vendor_qcom_opensource_display-commonsys-intf" />
   <remove-project name="android_vendor_qcom_opensource_power" />
+  <remove-project name="android_vendor_qcom_opensource_vibrator" />
   <project path="hardware/qcom-caf/sm8150/audio" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" remote="ArrowOS" revision="arrow-11.0-caf-sm8150" />
   <project path="hardware/qcom-caf/sm8150/display" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="ArrowOS" revision="arrow-11.0-caf-sm8150" />
   <project path="hardware/qcom-caf/sm8150/media" name="android_hardware_qcom_media" groups="qcom" remote="ArrowOS" revision="arrow-11.0-caf-sm8150" />
   <project path="vendor/qcom/opensource/commonsys-intf/display" name="android_vendor_qcom_opensource_display-commonsys-intf" remote="ArrowOS" revision="arrow-11.0" />
   <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" remote="ArrowOS" revision="arrow-11.0" />
+  <project path="vendor/qcom/opensource/vibrator" name="android_vendor_qcom_opensource_vibrator" remote="ArrowOS" revision="arrow-11.0" />
+
+  <!-- Needed custom Frameworks --> 
+  <remove-project name="frameworks_av" />
+  <project path="frameworks/av" name="pbos_frameworks_av" remote="Me" revision="eleven" />
   
 </manifest>
