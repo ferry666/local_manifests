@@ -29,7 +29,7 @@
   <remove-project name="hardware_qcom-caf_sm8150_display" />
   <remove-project name="hardware_qcom-caf_sm8150_media" />
   <remove-project name="android_vendor_qcom_opensource_display-commonsys-intf" />
-  <remove-project name="android_vendor_qcom_opensource_power" />
+  <remove-project name="vendor_qcom_opensource_power" />
   <remove-project name="android_vendor_qcom_opensource_vibrator" />
   <project path="hardware/qcom-caf/sm8150/audio" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" remote="ArrowOS" revision="arrow-11.0-caf-sm8150" />
   <project path="hardware/qcom-caf/sm8150/display" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="ArrowOS" revision="arrow-11.0-caf-sm8150" />
