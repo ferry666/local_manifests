@@ -16,4 +16,6 @@
   <project path="vendor/asus" name="android_vendor_asus_X00T_4.4" remote="BabangTamvan" revision="11" />
 
   <!--ZenParts -->
-   <project path"packages/apps/ZenParts" name="android_packages_apps_ZenParts" revision="master" />
+  <project path="packages/apps/ZenParts" name="android_packages_apps_ZenParts" remote="Zenparts" revision="master" />
+
+</manifest>
