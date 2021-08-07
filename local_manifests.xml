@@ -1,39 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   
-  <remote name="Me"
-          fetch="https://github.com/Dreadwyrm" />
+  <remote name="BabangTamvan"
+          fetch="https://github.com/ferry666" />
 	
-  <remote name="gr"
-          fetch="https://github.com/ghostrider-reborn" />
-	
-  <remote name="Clang"
-          fetch="https://github.com/ThankYouMario" />
-   
-  <remote name="ArrowOS"
-          fetch="https://github.com/ArrowOS" />
+  <remote name="pkm"
+          fetch="https://github.com/pkm774" />
+
+  <remote name="Zenparts"
+          fetch="https://github.com/SonalSingh18" />
 
   <!-- Trees -->
-  <project path="device/xiaomi/ginkgo" name="device_xiaomi_ginkgo" remote="Me" revision="A11" />
-  <project path="kernel/xiaomi/ginkgo" name="android_kernel_xiaomi_ginkgo" remote="gr" revision="11.0" />
-  <project path="vendor/xiaomi/ginkgo" name="vendor_xiaomi_ginkgo" remote="Me" revision="A11" />
-  
-  <!-- MIUI Camera -->
-  <project path="vendor/miuicamera" name="vendor_miuicamera" remote="Me" revision="11" />
+  <project path="device/asus/X00T" name="android_device_asus_X00T_4.4" remote="BabangTamvan" revision="11" />
+  <project path="kernel/asus/sdm660" name="kernel_asus_sdm660" remote="pkm" revision="master" />
+  <project path="vendor/asus" name="android_vendor_asus_X00T_4.4" remote="BabangTamvan" revision="11" />
 
-  <!-- Clang -->
-  <project path="prebuilts/clang/host/linux-x86/clang-sdllvm" name="proprietary_vendor_qcom_sdclang" remote="Clang" revision="ruby-12" clone-depth="1" />
-  
-  <!-- Needed custom HALs -->
-  <remove-project name="hardware_qcom-caf_sm8150_audio" />
-  <remove-project name="hardware_qcom-caf_sm8150_display" />
-  <remove-project name="hardware_qcom-caf_sm8150_media" />
-  <remove-project name="android_vendor_qcom_opensource_display-commonsys-intf" />
-  <remove-project name="android_vendor_qcom_opensource_power" />
-  <project path="hardware/qcom-caf/sm8150/audio" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" remote="ArrowOS" revision="arrow-11.0-caf-sm8150" />
-  <project path="hardware/qcom-caf/sm8150/display" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="ArrowOS" revision="arrow-11.0-caf-sm8150" />
-  <project path="hardware/qcom-caf/sm8150/media" name="android_hardware_qcom_media" groups="qcom" remote="ArrowOS" revision="arrow-11.0-caf-sm8150" />
-  <project path="vendor/qcom/opensource/commonsys-intf/display" name="android_vendor_qcom_opensource_display-commonsys-intf" remote="ArrowOS" revision="arrow-11.0" />
-  <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" remote="ArrowOS" revision="arrow-11.0" />
-  
-</manifest>
+  <!--ZenParts -->
+   <project path"packages/apps/ZenParts" name="android_packages_apps_ZenParts" revision="master" />
